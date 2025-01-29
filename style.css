@@ -589,35 +589,37 @@ testimonials
     margin-top: 2rem;
     padding: 1rem 3rem; /* تأكيد الحشو المناسب للأزرار */
     font-size: 1.6rem;
-}
 
 }
 
-    .navbar {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: 50%;
-      padding: 1rem 3%;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(20px);
-      border-bottom-left-radius: 2rem;
-      border-left: 2px solid var(--main-color);
-      border-bottom: 2px solid var(--main-color);
-      display: none;
-    }
-  
-    .navbar.active {
-      display: block;
-    }
-  
-    .navbar a {
-      display: block;
-      font-size: 2rem;
-      margin: 3rem 0;
-      color: white;
-    }
-  
+.navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: white;
+  }
+
+
+}
+
     .home {
       flex-direction: column-reverse;
       margin: 5rem 4rem;
@@ -700,6 +702,14 @@ testimonials
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
+}
+.service-box:hover  .service-info p{
+    color: var(--bg-color);
+
+}
+.service-box:hover  .service-info h4{
+    color: var(--bg-color);
+
 }
 /* إعدادات الهواتف المحمولة */
 @media (max-width: 600px) {
@@ -912,6 +922,7 @@ footer .social a:hover {
 
     .service-info p {
         font-size: 1rem; /* تقليل حجم النص */
+        
     }
     .home-img img {
         width: 60%; /* تعديل حجم الصورة لتناسب العرض */
